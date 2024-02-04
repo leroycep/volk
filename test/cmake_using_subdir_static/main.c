@@ -14,7 +14,7 @@ int main()
 #if defined(_WIN32)
     &vkCreateWin32SurfaceKHR;
 #elif defined(__linux__) || defined(__unix__)
-    &vkCreateXlibSurfaceKHR;
+    &vkCreateWaylandSurfaceKHR;
 #elif defined(__APPLE__)
     &vkCreateMacOSSurfaceMVK;
 #else
